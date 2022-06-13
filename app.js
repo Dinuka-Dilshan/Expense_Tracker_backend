@@ -5,7 +5,7 @@ import itemRoutes from "./routes/itemRoutes.js";
 import mongoose from "mongoose";
 
 const app = express();
-app.use(cors());
+app.use(cors({}));
 app.use(express.json())
 
 app.use("/items", itemRoutes);
